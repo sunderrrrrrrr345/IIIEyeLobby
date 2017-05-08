@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_img"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar_top"
+        android:id="@+id/action1"></include>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/action1"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/limear"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/limear"
+                android:layout_marginTop="@dimen/scroll_height1_land"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_width"
+                    android:layout_height="@dimen/icon_height"
+                    android:background="@drawable/vms_final_logo"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/frst_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/scroll_height"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/ed_preinforme_visitor"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/actionbar_height_home"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_login"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:hint="Pre Inform Visitor"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/drawable_padding"
+                    android:padding="@dimen/normal_padding"
+                    android:layout_margin="@dimen/normal_padding"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="@dimen/normal_textsize"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/ed_secuirty_pre_informe"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/actionbar_height_home"
+                    android:layout_margin="@dimen/normal_padding"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/drawable_padding"
+                    android:background="@drawable/border_login"
+                    android:drawableLeft="@drawable/ic_person_add_black_24dp"
+                    android:hint="Security Pre Info Visitor"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="@dimen/normal_textsize"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/normal_padding"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/scnd_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frst_view"
+                android:layout_marginTop="@dimen/button_margin_top_home"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/ed_my_guest"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/actionbar_height_home"
+                    android:layout_margin="@dimen/button_margin_top_home"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/border_login"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:drawablePadding="@dimen/drawable_padding"
+                    android:hint="My Guest"
+                    android:padding="@dimen/normal_padding"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="@dimen/normal_textsize"
+                    android:textStyle="normal" />
+
+
+                <TextView
+                    android:id="@+id/ed_profile"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/actionbar_height_home"
+                    android:layout_margin="@dimen/button_margin_top_home"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/border_login"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:drawablePadding="@dimen/drawable_padding"
+                    android:hint="Profile"
+                    android:padding="@dimen/normal_padding"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="@dimen/normal_textsize"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lst_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scnd_view"
+                android:layout_marginTop="@dimen/button_margin_top_home"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:id="@+id/ed_registered_worker"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/actionbar_height_home"
+                    android:layout_margin="@dimen/button_margin_top_home"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/border_login"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:drawablePadding="@dimen/drawable_padding"
+                    android:hint="Registered Worker"
+                    android:padding="@dimen/normal_padding"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="@dimen/normal_textsize"
+                    android:textStyle="normal" />
+
+
+                <TextView
+                    android:id="@+id/ed_logout"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/actionbar_height_home"
+                    android:layout_margin="@dimen/button_margin_top_home"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/border_login"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:drawablePadding="@dimen/drawable_padding"
+                    android:hint="Logout"
+                    android:padding="@dimen/normal_padding"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="@dimen/normal_textsize"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

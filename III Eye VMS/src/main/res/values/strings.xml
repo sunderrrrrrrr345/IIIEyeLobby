@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">III Eye VMS</string>
+    <string name="Network_Connection_Error_Msg" />
+    <string name="Alert_Timeout_Msg"></string>
+    <string name="register">Registered Worker</string>
+    <string name="title_activity_society_check">SocietyCheckActivity</string>
+</resources>

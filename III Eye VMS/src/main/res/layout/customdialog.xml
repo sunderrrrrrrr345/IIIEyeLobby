@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/custom_padding"
+    android:background="#ffffff">
+    <include layout="@layout/actionbar_top"></include>
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/forget_height"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:paddingLeft="@dimen/normal_padding"
+        android:textSize="@dimen/normal_textsize"
+        android:hint="Name"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:singleLine="true"
+        android:layout_marginLeft="@dimen/margin_left_custom"
+        android:layout_marginRight="@dimen/margin_left_custom"
+        android:inputType="text"
+        android:background="@drawable/border_login_register"
+        android:layout_marginTop="@dimen/margin_top_custom">
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/forget_height"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:paddingLeft="@dimen/normal_padding"
+        android:textSize="@dimen/normal_textsize"
+        android:hint="Mobile "
+        android:textColor="#000000"
+        android:layout_below="@+id/editText_name"
+        android:textColorHint="#000000"
+        android:singleLine="true"
+        android:layout_marginLeft="@dimen/margin_left_custom"
+        android:layout_marginRight="@dimen/margin_left_custom"
+        android:inputType="number"
+        android:background="@drawable/border_login_register"
+        android:layout_marginTop="10dp">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/forget_height"
+        android:layout_below="@+id/editText_mobile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/margin_left_custom"
+        android:layout_marginRight="@dimen/margin_left_custom"
+        android:layout_marginTop="@dimen/margin_top_edit"
+        android:onClick="onClick"
+        android:background="@drawable/border_login"
+        android:text="Pre Inform Security"
+        android:textStyle="normal"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/normal_textsize"
+        android:gravity="center_vertical|center_horizontal">
+
+
+    </Button>
+
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_img"
+    tools:context=".ProfileActivity">
+
+    <include layout="@layout/actionbar_top_back"
+        android:id="@+id/action1"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action1"
+        android:orientation="vertical">
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_below="@+id/action1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl"
+            android:orientation="vertical">
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/limear"
+                android:layout_marginTop="@dimen/scroll_height"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">-->
+
+                <ImageView
+                    android:layout_width="@dimen/icon_width"
+                    android:layout_height="@dimen/icon_height"
+                    android:background="@drawable/vms_final_logo"
+                    android:layout_marginTop="@dimen/scroll_height"
+                    android:layout_gravity="center_horizontal"
+                    />
+            <!--</LinearLayout>-->
+
+
+
+            <TextView
+                android:id="@+id/ed_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon"
+                android:layout_marginTop="@dimen/scroll_height"
+                android:layout_marginLeft="@dimen/button_margin_left"
+                android:layout_marginRight="@dimen/button_margin_right"
+                android:background="@drawable/border_login_register"
+                android:hint="Mobile"
+                android:textColorHint="@android:color/black"
+                android:inputType="number"
+                android:padding="@dimen/normal_padding"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/smartphone"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/normal_textsize"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:id="@+id/ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ed_mobile_number"
+                android:layout_marginLeft="@dimen/button_margin_left"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/button_margin_right"
+                android:layout_marginTop="@dimen/edit_margin_top"
+                android:background="@drawable/border_login_register"
+                android:hint="Name"
+                android:padding="@dimen/normal_padding"
+                android:textColorHint="@android:color/black"
+                android:drawableLeft="@drawable/ic_person_black_24dp1"
+                android:textColor="@android:color/black"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:textSize="@dimen/normal_textsize"
+                android:textStyle="normal" />
+
+
+
+            <TextView
+                android:id="@+id/ed_alter_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ed_mobile_number"
+                android:layout_marginLeft="@dimen/button_margin_left"
+                android:layout_marginRight="@dimen/button_margin_right"
+                android:layout_marginTop="@dimen/edit_margin_top"
+                android:gravity="center_vertical"
+                android:background="@drawable/border_login_register"
+                android:hint="Notification Number"
+                android:padding="@dimen/normal_padding"
+                android:inputType="number"
+                android:textColorHint="@android:color/black"
+                android:drawableLeft="@drawable/smartphone"
+                android:textColor="@android:color/black"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:textSize="@dimen/normal_textsize"
+                android:textStyle="normal" />
+
+
+
+            <TextView
+                android:id="@+id/ed_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ed_mobile_number"
+                android:layout_marginLeft="@dimen/button_margin_left"
+                android:layout_marginRight="@dimen/button_margin_right"
+                android:layout_marginTop="@dimen/edit_margin_top"
+                android:gravity="center_vertical"
+                android:background="@drawable/border_login_register"
+                android:hint="Email"
+                android:padding="@dimen/normal_padding"
+                android:textColorHint="@android:color/black"
+                android:drawableLeft="@drawable/ic_mail_black_24dp"
+                android:textColor="@android:color/black"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:textSize="@dimen/normal_textsize"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/ed_flat_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ed_mobile_number"
+                android:layout_marginLeft="@dimen/button_margin_left"
+                android:layout_marginRight="@dimen/button_margin_right"
+                android:layout_marginTop="@dimen/edit_margin_top"
+                android:gravity="center_vertical"
+                android:background="@drawable/border_login_register"
+                android:hint="Flat Number"
+                android:padding="@dimen/normal_padding"
+                android:textColorHint="@android:color/black"
+                android:drawableLeft="@drawable/ic_account_balance_black_24dp"
+                android:textColor="@android:color/black"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:textSize="@dimen/normal_textsize"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
+</RelativeLayout>
